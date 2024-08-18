@@ -1,0 +1,25 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+let sayHitesh = function () {
+    console.log("hitesh");
+}
+let changwText = function (params) {
+    document.querySelector('h1').innerHTML="Chai aur Javascript";
+}
+const change = setTimeout(changwText,1000);
+
+document.querySelector('#stop').addEventListener('click',function(e) {
+    clearInterval(change)
+})
+</script>
+</html>
